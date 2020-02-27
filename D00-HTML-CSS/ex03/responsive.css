@@ -1,0 +1,73 @@
+.nome
+{
+    background-color: #00fc04;
+}
+.poorme
+{
+    background-color: #00fdff;
+}
+.gaz
+{
+    background-color: #a1ff00;
+}
+.alcalins
+{
+    background-color: #ffcb3c;
+}
+.methalloid
+{
+    background-color: yellow;
+}
+.lanthanides
+{
+    background-color: #ff0dff;
+}
+.alcter
+{
+    background-color: #ff0067;
+}
+.halogens
+{
+    background-color: blueviolet;
+}
+.actinides
+{
+    background-color: #001dff;
+}
+.metals
+{
+    background-color: #b6aeaf;
+}
+.elem
+{
+    text-align: center;
+    font-weight: bold;
+}
+.masse
+{
+    text-align: right;
+    font-weight: 100;
+}
+.num
+{
+    text-align: left;
+    font-weight: 100;
+}
+th
+{
+    border: solid;
+    width: 60px;
+    height: 60px;
+}
+tr
+{
+    border: solid;
+    width: 60px;
+    height: 60px;
+}
+.mendeleiev
+{
+    border: none;
+    text-align: center;
+    font-family: "Arial Black", sans-serif;
+}

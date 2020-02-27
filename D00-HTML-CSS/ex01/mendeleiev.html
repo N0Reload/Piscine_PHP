@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau Périodique des Elements</title>
+    <style>
+        .nome
+        {
+            background-color: #00fc04;
+        }
+        .poorme
+        {
+            background-color: #00fdff;
+        }
+        .gaz
+        {
+            background-color: #a1ff00;
+        }
+        .alcalins
+        {
+            background-color: #ffcb3c;
+        }
+        .methalloid
+        {
+            background-color: yellow;
+        }
+        .lanthanides
+        {
+            background-color: #ff0dff;
+        }
+        .alcter
+        {
+            background-color: #ff0067;
+        }
+        .halogens
+        {
+            background-color: blueviolet;
+        }
+        .actinides
+        {
+            background-color: #001dff;
+        }
+        .metals
+        {
+            background-color: #b6aeaf;
+        }
+        .elem
+        {
+            text-align: center;
+            font-weight: bold;
+        }
+        .masse
+        {
+            text-align: right;
+            font-weight: 100;
+        }
+        .num
+        {
+            text-align: left;
+            font-weight: 100;
+        }
+        th
+        {
+            border: solid;
+            width: 60px;
+            height: 60px;
+        }
+        tr
+        {
+            border: solid;
+            width: 60px;
+            height: 60px;
+        }
+        .mendeleiev
+        {
+            border: none;
+            text-align: center;
+            font-family: "Arial Black", sans-serif;
+        }
+    </style>
+</head>
+<body style="background-color: ghostwhite">
+    <table align="center";>
+        <tr>
+            <td>
+                <img style="width: 50%" align="center" src="https://i.ytimg.com/vi/0lNuTSz6KVM/maxresdefault.jpg" alt="mendeleiev image">
+            </td>
+
+            <td>
+                Tableau Périodique des Elements
+            </td>
+        </tr>
+    </table>
+    <table align="center">
+        <tr>
+            <th class="nome">
+                <div class="masse"><sup>1</sup></div>
+                <div class="elem">H</div>
+                <div class="num"><sub>1</sub></div>
+            </th>
+            <th colspan="16" style="border: none"></th>
+            <th class="gaz">
+                <div class="masse"><sup>4</sup></div>
+                <div class="elem">He</div>
+                <div class="num"><sub>2</sub></div>
+            </th>
+        </tr>
+        <tr>
+            <th class="alcalins">
+                <div class="masse"><sup>6,9</sup></div>
+                <div class="elem">Li</div>
+                <div class="num"><sub>3</sub></div>
+            </th>
+            <th class="alcter">
+                <div class="masse"><sup>9</sup></div>
+                <div class="elem">Be</div>
+                <div class="num"><sub>4</sub></div>
+            </th>
+            <th colspan="10" style="border: none"></th>
+            <th class="methalloid">
+                <div class="masse"><sup>10,8</sup></div>
+                <div class="elem">B</div>
+                <div class="num"><sub>5</sub></div>
+            </th>
+            <th class="nome">
+                <div class="masse"><sup>12</sup></div>
+                <div class="elem">C</div>
+                <div class="num"><sub>6</sub></div>
+            </th>
+            <th class="nome">
+                <div class="masse"><sup>14</sup></div>
+                <div class="elem">N</div>
+                <div class="num"><sub>7</sub></div>
+            </th>
+            <th class="nome">
+                <div class="masse"><sup>15,9</sup></div>
+                <div class="elem">O</div>
+                <div class="num"><sub>8</sub></div>
+            </th>
+            <th class="halogens">
+                <div class="masse"><sup>18,9</sup></div>
+                <div class="elem">F</div>
+                <div class="num"><sub>9</sub></div>
+            </th>
+            <th class="gaz">
+                <div class="masse"><sup>20</sup></div>
+                <div class="elem">Ne</div>
+                <div class="num"><sub>10</sub></div>
+            </th>
+        </tr>
+        <tr>
+            <th class="alcalins">
+                <div class="masse"><sup>22,9</sup></div>
+                <div class="elem">Na</div>
+                <div class="num"><sub>11</sub></div>
+            </th>
+            <th class="alcter">
+                <div class="masse"><sup>24,3</sup></div>
+                <div class="elem">Mg</div>
+                <div class="num"><sub>12</sub></div>
+            </th>
+            <th colspan="10" style="border: none;"></th>
+            <th class="poorme">
+                <div class="masse"><sup>26,9</sup></div>
+                <div class="elem">Al</div>
+                <div class="num"><sub>13</sub></div>
+            </th>
+            <th class="methalloid">
+                <div class="masse"><sup>28</sup></div>
+                <div class="elem">Si</div>
+                <div class="num"><sub>14</sub></div>
+            </th>
+            <th class="nome">
+                <div class="masse"><sup>30,9</sup></div>
+                <div class="elem">P</div>
+                <div class="num"><sub>15</sub></div>
+            </th>
+            <th class="nome">
+                <div class="masse"><sup>32</sup></div>
+                <div class="elem">S</div>
+                <div class="num"><sub>16</sub></div>
+            </th>
+            <th class="halogens">
+                <div class="masse"><sup>35</sup></div>
+                <div class="elem">Cl</div>
+                <div class="num"><sub>17</sub></div>
+            </th>
+            <th class="gaz">
+                <div class="masse"><sup>39,9</sup></div>
+                <div class="elem">Ar</div>
+                <div class="num"><sub>18</sub></div>
+            </th>
+        </tr>
+        <tr>
+            <th class="alcalins">
+                <div class="masse"><sup>39</sup></div>
+                <div class="elem">K</div>
+                <div class="num"><sub>19</sub></div>
+            </th>
+            <th class="alcter">
+                <div class="masse"><sup>20</sup></div>
+                <div class="elem">Ca</div>
+                <div class="num"><sub>20</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>44,9</sup></div>
+                <div class="elem">Sc</div>
+                <div class="num"><sub>21</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>47,8</sup></div>
+                <div class="elem">Ti</div>
+                <div class="num"><sub>22</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>50,9</sup></div>
+                <div class="elem">V</div>
+                <div class="num"><sub>23</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>51,9</sup></div>
+                <div class="elem">Cr</div>
+                <div class="num"><sub>24</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>54,9</sup></div>
+                <div class="elem">Mn</div>
+                <div class="num"><sub>25</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>55,8</sup></div>
+                <div class="elem">Fe</div>
+                <div class="num"><sub>26</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>58,9</sup></div>
+                <div class="elem">CO</div>
+                <div class="num"><sub>27</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>58,6</sup></div>
+                <div class="elem">Ni</div>
+                <div class="num"><sub>28</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>63,5</sup></div>
+                <div class="elem">Cu</div>
+                <div class="num"><sub>29</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>65,3</sup></div>
+                <div class="elem">Zn</div>
+                <div class="num"><sub>30</sub></div>
+            </th>
+            <th class="poorme">
+                <div class="masse"><sup>69,7</sup></div>
+                <div class="elem">Ga</div>
+                <div class="num"><sub>31</sub></div>
+            </th>
+            <th class="methalloid">
+                <div class="masse"><sup>72,6</sup></div>
+                <div class="elem">Ge</div>
+                <div class="num"><sub>32</sub></div>
+            </th>
+            <th class="methalloid">
+                <div class="masse"><sup>74,9</sup></div>
+                <div class="elem">As</div>
+                <div class="num"><sub>33</sub></div>
+            </th>
+            <th class="nome">
+                <div class="masse"><sup>78,9</sup></div>
+                <div class="elem">Se</div>
+                <div class="num"><sub>34</sub></div>
+            </th>
+            <th class="halogens">
+                <div class="masse"><sup>79</sup></div>
+                <div class="elem">Br</div>
+                <div class="num"><sub>35</sub></div>
+            </th>
+            <th class="gaz">
+                <div class="masse"><sup>83,8</sup></div>
+                <div class="elem">Kr</div>
+                <div class="num"><sub>36</sub></div>
+            </th>
+        </tr>
+        <tr>
+            <th class="alcalins">
+                <div class="masse"><sup>85</sup></div>
+                <div class="elem">Rb</div>
+                <div class="num"><sub>37</sub></div>
+            </th>
+            <th class="alcter">
+                <div class="masse"><sup>87</sup></div>
+                <div class="elem">Sr</div>
+                <div class="num"><sub>38</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>88</sup></div>
+                <div class="elem">Y</div>
+                <div class="num"><sub>39</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>91</sup></div>
+                <div class="elem">Zr</div>
+                <div class="num"><sub>40</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>92</sup></div>
+                <div class="elem">Nb</div>
+                <div class="num"><sub>41</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>95</sup></div>
+                <div class="elem">Mo</div>
+                <div class="num"><sub>42</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>98</sup></div>
+                <div class="elem">Tc</div>
+                <div class="num"><sub>43</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>101</sup></div>
+                <div class="elem">Ru</div>
+                <div class="num"><sub>44</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>102,9</sup></div>
+                <div class="elem">Rh</div>
+                <div class="num"><sub>45</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>106</sup></div>
+                <div class="elem">Pd</div>
+                <div class="num"><sub>46</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>107,8</sup></div>
+                <div class="elem">Ag</div>
+                <div class="num"><sub>47</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>112</sup></div>
+                <div class="elem">Cd</div>
+                <div class="num"><sub>48</sub></div>
+            </th>
+            <th class="poorme">
+                <div class="masse"><sup>114</sup></div>
+                <div class="elem">In</div>
+                <div class="num"><sub>49</sub></div>
+            </th>
+            <th class="poorme">
+                <div class="masse"><sup>118</sup></div>
+                <div class="elem">Sn</div>
+                <div class="num"><sub>50</sub></div>
+            </th>
+            <th class="methalloid">
+                <div class="masse"><sup>121</sup></div>
+                <div class="elem">Sb</div>
+                <div class="num"><sub>51</sub></div>
+            </th>
+            <th class="methalloid">
+                <div class="masse"><sup>127,6</sup></div>
+                <div class="elem">Te</div>
+                <div class="num"><sub>52</sub></div>
+            </th>
+            <th class="halogens">
+                <div class="masse"><sup>126,9</sup></div>
+                <div class="elem">I</div>
+                <div class="num"><sub>53</sub></div>
+            </th>
+            <th class="gaz">
+                <div class="masse"><sup>131</sup></div>
+                <div class="elem">Xe</div>
+                <div class="num"><sub>54</sub></div>
+            </th>
+        </tr>
+        <tr>
+            <th class="alcalins">
+                <div class="masse"><sup>132,9</sup></div>
+                <div class="elem">Cs</div>
+                <div class="num"><sub>55</sub></div>
+            </th>
+            <th class="alcter">
+                <div class="masse"><sup>137</sup></div>
+                <div class="elem">Ba</div>
+                <div class="num"><sub>56</sub></div>
+            </th>
+            <th class="lanthanides" style="border: none">
+                <div class="elem">*</div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>178</sup></div>
+                <div class="elem">Hf</div>
+                <div class="num"><sub>72</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>180,9</sup></div>
+                <div class="elem">Ta</div>
+                <div class="num"><sub>73</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>183</sup></div>
+                <div class="elem">W</div>
+                <div class="num"><sub>74</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>186</sup></div>
+                <div class="elem">Re</div>
+                <div class="num"><sub>75</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>190</sup></div>
+                <div class="elem">Os</div>
+                <div class="num"><sub>76</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>192</sup></div>
+                <div class="elem">Ir</div>
+                <div class="num"><sub>77</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>195</sup></div>
+                <div class="elem">Pt</div>
+                <div class="num"><sub>78</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>196,9</sup></div>
+                <div class="elem">Au</div>
+                <div class="num"><sub>79</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>200</sup></div>
+                <div class="elem">Hg</div>
+                <div class="num"><sub>80</sub></div>
+            </th>
+            <th class="poorme">
+                <div class="masse"><sup>204</sup></div>
+                <div class="elem">Tl</div>
+                <div class="num"><sub>81</sub></div>
+            </th>
+            <th class="poorme">
+                <div class="masse"><sup>207</sup></div>
+                <div class="elem">Pb</div>
+                <div class="num"><sub>82</sub></div>
+            </th>
+            <th class="poorme">
+                <div class="masse"><sup>208,9</sup></div>
+                <div class="elem">Bi</div>
+                <div class="num"><sub>83</sub></div>
+            </th>
+            <th class="methalloid">
+                <div class="masse"><sup>209</sup></div>
+                <div class="elem">Po</div>
+                <div class="num"><sub>84</sub></div>
+            </th>
+            <th class="halogens">
+                <div class="masse"><sup>210</sup></div>
+                <div class="elem">At</div>
+                <div class="num"><sub>85</sub></div>
+            </th>
+            <th class="gaz">
+                <div class="masse"><sup>222</sup></div>
+                <div class="elem">Rn</div>
+                <div class="num"><sub>86</sub></div>
+            </th>
+        </tr>
+        <tr>
+            <th class="alcalins">
+                <div class="masse"><sup>223</sup></div>
+                <div class="elem">Fr</div>
+                <div class="num"><sub>87</sub></div>
+            </th>
+            <th class="alcter">
+                <div class="masse"><sup>226</sup></div>
+                <div class="elem">Ra</div>
+                <div class="num"><sub>88</sub></div>
+            </th>
+            <th class="actinides" style="border: none">
+                <div class="elem">**</div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>261</sup></div>
+                <div class="elem">Rf</div>
+                <div class="num"><sub>104</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>262</sup></div>
+                <div class="elem">Db</div>
+                <div class="num"><sub>105</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>266</sup></div>
+                <div class="elem">Sg</div>
+                <div class="num"><sub>106</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>264</sup></div>
+                <div class="elem">Bh</div>
+                <div class="num"><sub>107</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>277</sup></div>
+                <div class="elem">Hs</div>
+                <div class="num"><sub>108</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>268</sup></div>
+                <div class="elem">Mt</div>
+                <div class="num"><sub>109</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>272</sup></div>
+                <div class="elem">Ds</div>
+                <div class="num"><sub>110</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>272</sup></div>
+                <div class="elem">Rg</div>
+                <div class="num"><sub>111</sub></div>
+            </th>
+            <th class="metals">
+                <div class="masse"><sup>277</sup></div>
+                <div class="elem">Cn</div>
+                <div class="num"><sub>112</sub></div>
+            </th>
+            <th class="poorme" style="opacity: 0.5;">
+                <div class="masse"><sup>284</sup></div>
+                <div class="elem">Uut</div>
+                <div class="num"><sub>113</sub></div>
+            </th>
+            <th class="poorme" style="opacity: 0.5;">
+                <div class="masse"><sup>289</sup></div>
+                <div class="elem">Uuq</div>
+                <div class="num"><sub>114</sub></div>
+            </th>
+            <th class="poorme" style="opacity: 0.5;">
+                <div class="masse"><sup>288</sup></div>
+                <div class="elem">Uup</div>
+                <div class="num"><sub>115</sub></div>
+            <th class="poorme" style="opacity: 0.5;">
+                <div class="masse"><sup>292</sup></div>
+                <div class="elem">Uuh</div>
+                <div class="num"><sub>116</sub></div>
+            </th>
+            <th class="halogens" style="opacity: 0.5;">
+                <div class="masse"><sup>292</sup></div>
+                <div class="elem">Uus</div>
+                <div class="num"><sub>117</sub></div>
+            </th>
+            <th class="gaz" style="opacity: 0.5;">
+                <div class="masse"><sup>294</sup></div>
+                <div class="elem">Uuo</div>
+                <div class="num"><sub>118</sub></div>
+            </th>
+         </tr>
+    </table>
+    <br>
+    <table align="right">
+        <tr>
+            <th class="lanthanides" style="border: none">
+                <div class="elem">*</div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>138,9</sup></div>
+                <div class="elem">La</div>
+                <div class="num"><sub>57</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>140</sup></div>
+                <div class="elem">Ce</div>
+                <div class="num"><sub>58</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>140,9</sup></div>
+                <div class="elem">Pr</div>
+                <div class="num"><sub>59</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>144</sup></div>
+                <div class="elem">Nd</div>
+                <div class="num"><sub>60</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>145</sup></div>
+                <div class="elem">Pm</div>
+                <div class="num"><sub>61</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>150</sup></div>
+                <div class="elem">Sm</div>
+                <div class="num"><sub>62</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>151,9</sup></div>
+                <div class="elem">Eu</div>
+                <div class="num"><sub>63</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>157</sup></div>
+                <div class="elem">Gd</div>
+                <div class="num"><sub>64</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>158,9</sup></div>
+                <div class="elem">Tb</div>
+                <div class="num"><sub>65</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>162</sup></div>
+                <div class="elem">Dy</div>
+                <div class="num"><sub>66</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>164,9</sup></div>
+                <div class="elem">Ho</div>
+                <div class="num"><sub>67</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>167</sup></div>
+                <div class="elem">Er</div>
+                <div class="num"><sub>68</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>168,9</sup></div>
+                <div class="elem">Tm</div>
+                <div class="num"><sub>69</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>173</sup></div>
+                <div class="elem">Yb</div>
+                <div class="num"><sub>70</sub></div>
+            </th>
+            <th class="lanthanides">
+                <div class="masse"><sup>174</sup></div>
+                <div class="elem">Lu</div>
+                <div class="num"><sub>71</sub></div>
+            </th>
+        </tr>
+        <tr>
+            <th class="actinides" style="border: none">
+                <div class="elem">**</div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>227</sup></div>
+                <div class="elem">Ac</div>
+                <div class="num"><sub>89</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>231</sup></div>
+                <div class="elem">Th</div>
+                <div class="num"><sub>90</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>232</sup></div>
+                <div class="elem">Pa</div>
+                <div class="num"><sub>91</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>237</sup></div>
+                <div class="elem">U</div>
+                <div class="num"><sub>92</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>238</sup></div>
+                <div class="elem">Np</div>
+                <div class="num"><sub>93</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>243</sup></div>
+                <div class="elem">Pu</div>
+                <div class="num"><sub>94</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>244</sup></div>
+                <div class="elem">Am</div>
+                <div class="num"><sub>95</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>247</sup></div>
+                <div class="elem">Cm</div>
+                <div class="num"><sub>96</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>247</sup></div>
+                <div class="elem">Bk</div>
+                <div class="num"><sub>97</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>251</sup></div>
+                <div class="elem">Cf</div>
+                <div class="num"><sub>98</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>252</sup></div>
+                <div class="elem">Es</div>
+                <div class="num"><sub>99</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>257</sup></div>
+                <div class="elem">Fm</div>
+                <div class="num"><sub>100</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>258</sup></div>
+                <div class="elem">Md</div>
+                <div class="num"><sub>101</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>259</sup></div>
+                <div class="elem">No</div>
+                <div class="num"><sub>102</sub></div>
+            </th>
+            <th class="actinides">
+                <div class="masse"><sup>261</sup></div>
+                <div class="elem">Lr</div>
+                <div class="num"><sub>103</sub></div>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>
