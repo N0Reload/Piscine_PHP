@@ -1,9 +1,13 @@
 #!/usr/bin/php
 <?php
-    $i = 0;
-    while($i <= $argc - 1)
+    $ret = array();
+    unset($argv[0]);
+    foreach($argv as $str)
     {
-        $var = explode(' ', $argv[$i]);
-        $i++;
+    	$tmp = array_filter(explode(' ', $str));
+    	foreach($tmp as $str2)
+    		$ret[] = $str2;
     }
-    print_r($var);
+    sort($ret);
+    foreach($ret as $print)
+    	echo "$print.\n";
