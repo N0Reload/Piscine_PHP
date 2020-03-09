@@ -3,7 +3,5 @@
     if ($argc > 1)
     {
         for ($i = 1; $i < $argc; $i++)
-        echo "$argv[$i]\n";
-
-		echo "$argc";
+          echo "$argv[$i]\n";
     }
