@@ -15,12 +15,13 @@
         printf("%d\n", $first - $second);
     else if ($op === "*")
         printf("%d\n", $first * $second);
-    else if ($second === 0)
-    {
-        echo "Do not Divide by Zero pleas ... \n";
-        return ;
-    }
     else if ($op === "/")
-        printf("%d\n", $first / $second);
+        if ($second === 0)
+            echo "Do not Divide by Zero pleas ... \n";
+        else
+            printf("%d\n", $first / $second);
     else if ($op === "%")
+        if ($second === 0)
+            echo "Do not Divide by Zero pleas ... \n";
+        else
         printf("%d\n", $first % $second);
