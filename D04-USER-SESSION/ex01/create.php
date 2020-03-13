@@ -4,7 +4,7 @@
         echo "ERROR\n";
         return ;
     }
-    $path = "/home/ubuntu/Desktop/Passwd";
+    $path = "/home/ubuntu/Desktop/Piscine_PHP/D04-USER-SESSION/Passwd";
     if (!file_exists($path))
         mkdir($path);
     $path .= "/Logs";
