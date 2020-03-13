@@ -14,10 +14,10 @@
     $bool = false;
     foreach ($db as $key => $value)
         if ($value['login'] === $_POST['login'])
-            if ($value['passwd'] === hash(whirlpool, $_POST['oldpw']))
+            if ($value['passwd'] === hash("whirlpool", $_POST['oldpw']))
             {
                 $bool = true;
-                $db[$key]['passwd'] = hash(whirlpool, $_POST['newpw']);
+                $db[$key]['passwd'] = hash("whirlpool", $_POST['newpw']);
                 file_put_contents($path, serialize($db));
                 echo "OK\n";
             }

@@ -19,7 +19,7 @@
             }
     }
     $array['login'] = $_POST['login'];
-    $array['passwd'] = hash(whirlpool, $_POST['passwd']);
+    $array['passwd'] = hash("whirlpool", $_POST['passwd']);
     $file[] = $array;
     file_put_contents($path, serialize($file));
     echo "OK\n";
