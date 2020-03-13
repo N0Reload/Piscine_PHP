@@ -40,7 +40,6 @@ if ($argc > 1)
         date_default_timezone_set("Europe/Paris");
         $date = explode(' ', $argv[1]);
         $hour = explode(':', $date[4]);
-        echo mktime(intval($hour[0]), intval($hour[1]), intval($hour[2]), ret_month($date[2]), intval($date[1]), intval($date[3]));
-        echo"\n";
+        echo mktime(intval($hour[0]), intval($hour[1]), intval($hour[2]), ret_month($date[2]), intval($date[1]), intval($date[3]))."\n";
     }
 }
