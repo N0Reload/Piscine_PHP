@@ -10,4 +10,4 @@
     else if ($action === "del")
         setcookie($name, null, -1);
     else if ($action === "set")
-        setcookie($name, $value, time() + 60*60*42);
+        setcookie($name, $value, time() + 60*60*42, null, null, false, true);
