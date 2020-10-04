@@ -1,11 +1,11 @@
 <?php
     session_start();
-    if ($_GET['submit'] == "OK")
+    if ($_GET['submit'] === 'OK')
     {
-        $_SESSION['login'] = $_GET['login'];
-        $_SESSION['passwd'] = $_GET['passwd'];
-        echo "welcome " . $_GET['login'] . "\n";
-        echo "your password is " . $_GET['passwd'] . "\n";
+        if ($_GET['login'] != null)
+            $_SESSION['login'] = $_GET['login'];
+        if ($_GET['passwd'] != null)
+            $_SESSION['passwd'] = $_GET['passwd'];
     }
 ?>
 
@@ -17,12 +17,11 @@
 </head>
 <body>
     <form method="get" action="index.php">
-        login: <input type="text" name="login" value="<?php echo $_SESSION['login'];?>">
+        login : <input type="text" name="login" value="<?php echo $_SESSION['login'];?>">
         <br>
-        passwd: <input type="text" name="passwd" value="<?php echo $_SESSION['passwd'];?>">
+        password : <input type="password" name="passwd" value="<?php echo $_SESSION['passwd'];?>">
         <br>
         <input type="submit" name="submit" value="OK">
     </form>
 </body>
 </html>
-
