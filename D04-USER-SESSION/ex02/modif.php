@@ -13,10 +13,11 @@
         {
             if ($value['login'] === $_POST['login'] && $value['passwd'] === hash('whirlpool', $_POST['oldpw']))
             {
-                echo "actual pw : ".$value['passwd']."\nold pw : ".hash('whirlpool', $_POST['oldpw'])."\n newpw : ".hash('whirlpool', $_POST['newpw'])."\n";
-                $value['passwd'] = hash('whirlpool', $_POST['newpw']);
-                echo "actual pw : ".$value['passwd']."\nold pw : ".hash('whirlpool', $_POST['oldpw'])."\n newpw : ".hash('whirlpool', $_POST['newpw']);
-                // tout est ok, changement de mdp fait. now need to put into fichier sinon pas modifie
+                $file[$key]['passwd'] = hash('whirlpool', $_POST['newpw']);
+                file_put_contents($path, serialize($file));
+                echo "OK\n";
+                return ;
             }
         }
     }
+    echo "ERROR\n";
