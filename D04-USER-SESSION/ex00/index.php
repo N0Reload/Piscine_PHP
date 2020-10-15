@@ -6,6 +6,7 @@
             $_SESSION['login'] = $_GET['login'];
         if ($_GET['passwd'] != null)
             $_SESSION['passwd'] = $_GET['passwd'];
+        echo "Hi ".$_SESSION['login'].", your password is : <".$_SESSION['passwd'].">\n";
     }
 ?>
 
