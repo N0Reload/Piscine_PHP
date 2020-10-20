@@ -4,6 +4,7 @@
     if ($_SESSION['loggued_on_user'] !== "")
     {
         echo '<!DOCTYPE html><html><head></head><body>';
+        echo "<script langage='javascript'>top.frames['chat'].location = 'chat.php';</script>";
         echo '<form method="post" action="speak.php">';
         echo 'Message : <input type="text" name="msg">';
         echo '<input type="submit" name="send" value="send">';
@@ -14,15 +15,13 @@
     if (!file_exists($path))
         mkdir($path);
     $path .= "/chat";
-    $fp = fopen($path, 'r+');
+    $fp = fopen($path, "r+");
     if (flock($fp, LOCK_EX))
     {
         $db = unserialize(file_get_contents($path));
-        $msg['login'] = $_SESSION['loggued_on_user'];
-        $msg['time'] = time();
-        $msg['msg'] = $_POST['msg'];
+        $msg = array('login' => $_SESSION['loggued_on_user'], 'time' => time(), 'msg' => $_POST['msg']);
         $file[] = $msg;
         file_put_contents($path, serialize($file));
-        fclose($fp);
     }
+    fclose($fp);
     echo '</form></body></html>';
